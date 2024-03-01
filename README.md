@@ -12,20 +12,17 @@ This project is a meticulous replica of the Netflix website, crafted with HTML, 
 
 - **Responsive Design:** The clone is designed to deliver a consistent and engaging user experience across a diverse range of devices and screen sizes.
 
-## Demo
-
-Witness the Netflix Clone in action through the [live demo](demo_link). Explore its functionality and experience the familiar Netflix interface.
 
 ## Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/netflix-clone.git
+   git clone https://github.com/Youssef0ssama/Netflix-clone.git
    ```
 
 2. **Navigate to the project directory:**
    ```bash
-   cd netflix-clone
+   cd Netflix-clone
    ```
 
 3. **Open in Browser:**
