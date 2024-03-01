@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #e50914;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: white;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase-l {
+    position: relative;
+    height: 90px;
+    display: flex;
+}
+
+.showcase-l img {
+    width: 170px;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+}
+
+.showcase-l .sign {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.5rem;
+}
+
+.showcase .showcase-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 35%;
+    height: 75%;
+    text-align: center;
+}
+.showcase .showcase-content image{
+    justify-content: center;
+}
+.showcase .showcase-content p{
+    font-size: 1.3rem;   
+    color: #333333;
+}
+.showcase .showcase-content .box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-height: 60px;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+}
+.showcase .showcase-content .box img{
+    width: 10%;
+    height: 50%;
+}

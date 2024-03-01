@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Netflix</title>
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <div class="image">
+                <img src="img/logo.png" alt="Netflix" />
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="" style="color: white;">Home</a></li>
+                    <li><a href="">TVProgrammes</a></li>
+                    <li><a href="">Films</a></li>
+                    <li><a href="">Originals</a></li>
+                    <li><a href="">Recently Added</a></li>
+                    <li><a href="">My List</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form class="example" action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search" style="padding: 0px;"></i></button>
+                </form>
+            </div>
+            <div class="extra">
+                <a href=""><i class="fas fa-bell"></i></a>
+                <img src="img/Mike.png" onclick="openPopup()">
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <a href="main.html">Log out</a>
+        </div>
+        <div class="showcase-content"  onclick="closePopup()">
+            <img src="img/Nseries.png" style="height: 60px; width: 120px;">
+            <img src="img/Devil in ohio.png" style="height: 150px; width: 400px;">
+            <div class="text">
+                <img src="img/top 10.png" style="height: 40px; width: 50px;">
+                <p>#1 in TV Shows Today</p>
+            </div>
+            <pre>  Determined to protect a young patient who escaped a mysterious
+  cult, a psychiatrist takes the girl in, putting her own family 
+  — and life — in danger.</pre>
+            <br>
+            <a href="https://youtu.be/ScEl_smzT3A" class="btn btn-s" target="_blank"><i class="fas fa-play"></i> &nbsp;
+                Play</a>
+            <br><br><br>
+            <div class="content">
+                <h2>Popular on Netflix</h2><br>
+                <table class="table">
+                    <tr>
+                        <td><a href="https://youtu.be/okOsyezoR7s" target="_blank"><img src="img/1.jpg"></a></td>
+                        <td><a href="https://youtu.be/d9MyW72ELq0" target="_blank"><img src="img/2.png"></a></td>
+                        <td><a href="https://youtu.be/5iaYLCiq5RM" target="_blank"><img src="img/3.jpg"></a></td>
+                        <td><a href="https://youtu.be/1tzFRIQfwXg" target="_blank"><img src="img/4.png"></a></td>
+                        <td><a href="https://youtu.be/9A82ciNC7jk" target="_blank"><img src="img/5.jpg"></a></td>
+                        <td><a href="https://youtu.be/J7nJksXDBWc" target="_blank"><img src="img/6.jpg"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+    <br><br>
+    <section class="movies">
+        <h2>Trending Now</h2><br>
+        <table class="table">
+            <tr>
+                <td><a href="https://youtu.be/iGAHnZ555nI" target="_blank"><img src="img/7.jpg"></a></td>
+                <td><a href="https://youtu.be/srx7fSBwvF4" target="_blank"><img src="img/8.jpg"></a></td>
+                <td><a href="https://youtu.be/ONHBaC-pfsk" target="_blank"><img src="img/9.jpg"></a></td>
+                <td><a href="https://youtu.be/oxy8udgWRmo" target="_blank"><img src="img/10.jpg"></a></td>
+                <td><a href="https://youtu.be/hMANIarjT50" target="_blank"><img src="img/11.jpg"></a></td>
+                <td><a href="https://youtu.be/BRb4U99OU80" target="_blank"><img src="img/12.jpg"></a></td>
+            </tr>
+        </table>
+    </section>
+    <section class="tv_shows">
+        <h2>Continue watching for Mike</h2><br>
+        <table class="table">
+            <tr>
+                <td><a href="https://youtu.be/s9APLXM9Ei8" target="_blank"><img src="img/13.jpg"></a></td>
+                <td><a href="https://youtu.be/LFtRkDC7aHc" target="_blank"><img src="img/14.jpg"></a></td>
+                <td><a href="https://youtu.be/kwrQzTz16w4" target="_blank"><img src="img/15.jpg"></a></td>
+                <td><a href="https://youtu.be/9GgxinPwAGc" target="_blank"><img src="img/16.jpg"></a></td>
+                <td><a href="https://youtu.be/T0w8iL2vS04" target="_blank"><img src="img/17.jpg"></a></td>
+                <td><a href="https://youtu.be/2nsT9uQPIrk" target="_blank"><img src="img/18.jpg"></a></td>
+            </tr>
+        </table>
+    </section>
+    <script>
+        const showtop = document.querySelector('.showcase-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                showtop.classList.add('showcase-top-scrolled');
+            } else if (window.screenY <= 50) {
+                showtop.classList.remove('showcase-top-scrolled');
+            }
+        });
+
+        let popup = document.getElementById("popup");
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+
+</html>
